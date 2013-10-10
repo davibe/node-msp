@@ -1,0 +1,17 @@
+{
+  "name": "msp",
+  "description": "Simple Multiwii Serial Protocol (MSP) implementation for node.js",
+  "version": "0.0.2",
+  "author": "Davide Bertola <dade@dadeb.it>",
+  "keywords": ["node", "msp", "multiwii", "serialport"],
+  "dependencies": {
+    "serialport": "*"
+  },
+  "main": "./lib/msp",
+  "directories": {
+    "lib": "lib"
+  },
+  "engines": {
+    "node": "*"
+  }
+}
