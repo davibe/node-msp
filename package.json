@@ -5,7 +5,8 @@
   "author": "Davide Bertola <dade@dadeb.it>",
   "keywords": ["node", "msp", "multiwii", "serialport"],
   "dependencies": {
-    "serialport": "*"
+    "serialport": "*",
+    "optimist": "*"
   },
   "main": "./lib/msp",
   "directories": {

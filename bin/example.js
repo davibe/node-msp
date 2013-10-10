@@ -1,5 +1,5 @@
 var serialport = require('serialport');
-var msp = require('/msp');
+var msp = require('msp');
 
 var argv = require('optimist')
   .boolean('help')
@@ -43,10 +43,11 @@ protocol.on('*', function (name, data) {
   console.log(data);
 });
 
+port.on('error', function () { console.error(arguments); });
+
 port.on('open', function () {
   // feed the protocol with new data coming from the port
   port.on('data', function (data) { protocol.message_decode(data); });
-  port.on('error', function () { console.error(arguments); });
 
   var later = function () {
     port_message_send(port, msp.codes.MSP_UID, msp.codes.MSP_UID);

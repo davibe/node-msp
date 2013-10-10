@@ -23,7 +23,7 @@ A simple example. Sends a bunch of commands to the serial port and prints respon
 
     cd node-msp
     npm link .
-    node example.js
+    node bin/example.js
 
 
 What is it for
